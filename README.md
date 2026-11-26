@@ -8,7 +8,7 @@
 
 - **Workshop 负责**：起草 → 评审 → 融合 → 冻结类型与契约。
 - **Coding Agent 负责**：只读类型项目，做实现；遇到类型缺陷写报告，不改契约。
-- **两者之间的唯一接口**：类型项目文件夹 + [Contract.md](../Contract.md)。
+- **两者之间的唯一接口**：类型项目文件夹 + [Contract.md](https://github.com/math4mad/sim-supermarket-types/blob/master/Contract.md)。
 
 ## 2. 工作流
 
@@ -22,7 +22,7 @@ Draft workshop                 Type workshop                   产出
 
 - 可循环：换一组输入或约束，重跑 draft → review → fusion，得到**另一套类型方案**。
 - 每轮产物都要能独立编译、能生成文档、能被一个没读过对话的 Agent 直接使用。
-- 本轮产物：[review.md](../../review.md)（评审报告）+ `../_composer/`（融合后的类型项目）。
+- 本轮产物：[review.md](review.md)（评审报告）+ [sim-supermarket-types](https://github.com/math4mad/sim-supermarket-types)（融合后的类型项目）。
 
 ## 3. 目录职责
 
@@ -32,9 +32,9 @@ Draft workshop                 Type workshop                   产出
 | `drafts/` | 四份草案的索引与一句话评价 | ❌ 不给 |
 | `decisions.md` | 融合期的裁决记录（为什么这样定） | ⚠️ 只提炼进 Contract |
 | `feedback/` | 缺陷报告协议、模板、周转规则 | ✅ 协议给，过程不给 |
-| [`../../Contract.md`](../../Contract.md) | 面向实现者的使用条款 | ✅ 必需 |
-| [`../_composer/`](../_composer) | **类型项目文件夹**（唯一交付物） | ✅ 只给这个 |
-| [`../../review.md`](../../review.md) | 四份实现的完成度评审 | ❌ 不给 |
+| [Contract.md](https://github.com/math4mad/sim-supermarket-types/blob/master/Contract.md) | 面向实现者的使用条款 | ✅ 必需 |
+| [sim-supermarket-types](https://github.com/math4mad/sim-supermarket-types) | **类型项目文件夹**（唯一交付物） | ✅ 只给这个 |
+| [review.md](review.md) | 四份实现的完成度评审（round-1 快照） | ❌ 不给 |
 
 > 草案与对话保留在原地，这里只做索引，不复制。
 > 原因：复制会带来两份真相与巨大的上下文/体积；索引足够复现。
@@ -73,7 +73,16 @@ Coding Agent 的可见范围**只有**：
 
 - 轮次：`round-1`
 - 输入：四份 Agent 草案（见 `drafts/README.md`）
-- 评审：[review.md](../../review.md)（`_1` 90 / `_2` 97 / `_3` 50 / `_4` 59）
+- 评审：[review.md](review.md)（`_1` 90 / `_2` 97 / `_3` 50 / `_4` 59）
 - 基座：`Draft-Sim-SuperMarket_2`
 - 类型项目：`_composer`（10 包、52 文件、TypeDoc 已生成）
 - 交付契约：`Contract.md` v0.1.0
+
+## 7. 发布地址
+
+| 内容 | 地址 |
+|---|---|
+| 类型项目 | https://github.com/math4mad/sim-supermarket-types |
+| 类型文档（GitHub Pages） | https://math4mad.github.io/sim-supermarket-types/ |
+| Type Workshop | https://github.com/math4mad/typeworkshop |
+| 提交账本 | https://github.com/math4mad/commit-ledger |

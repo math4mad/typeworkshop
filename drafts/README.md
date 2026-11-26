@@ -10,7 +10,7 @@
 | [`Draft-Sim-SuperMarket_3`](../../Draft-Sim-SuperMarket_3) | 50 | 通用进销存 CURD | 多门店 `ProductStock`、可读命名 | 缺 `world`/`dataworld`/`sim` 层，整体未吸收 |
 | [`Draft-Sim-SuperMarket_4`](../../Draft-Sim-SuperMarket_4) | 59 | 架构概念正确 | `ManagerStrategy`、`ConsumerDecisionEngine`、`SimulationStep`、`exportForML` 思路 | 无进销存实体、`Reading` 联合损坏、漏 `onset`、墙被穿透、`composite` 假预留 |
 
-完整评审见 [`review.md`](../../../review.md)。
+完整评审见 [`review.md`](../review.md)。
 
 ## 复现
 
